@@ -1,0 +1,8 @@
+@import "font.css";
+@import "~normalize.css";
+
+h1{
+    color: red;
+    font-family: 'Rubik Distressed';
+    margin: 50px auto;
+}

@@ -1,0 +1,118 @@
+.house{
+    background-color: aliceblue;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+
+    .house_mine{
+        position: absolute;
+        z-index: 2;
+        width: 50px;
+        height: 100%;
+        background-color: black;
+        border: 2px solid white;
+        box-sizing: border-box;
+
+        .house_mine_elevator{
+            width: 45px;
+            height: 50px;
+            box-sizing: border-box;
+            border: 1px solid white;
+            background-color: brown;
+            display: flex;
+            justify-content: center;
+            position: fixed;
+            top: 2px;
+            transition: top 10s;
+
+            .house_mine_elevator_door{
+                width: 2px;
+                height: 100%;
+                background-color: white;
+                transition: all 0.5s; 
+            }
+        }
+    }
+
+    .house_floor{
+        background-color: rgb(30, 103, 79);
+        width: 500px;
+        height: 50px;
+        border: 2px solid black;
+        display: flex;
+
+        .house_floor_red_doorHandle{
+                width: 3px;
+                height: 2px;
+                background-color: brown;
+                margin: 20px 0 0 2px;
+        }
+
+        .house_floor_red{
+            background-color: red;
+            border: 1px solid black;
+            width: 30px;
+            height: 40px;
+            margin: 4px;
+        }
+        .house_floor_green{
+            background-color: green;
+            border: 1px solid black;
+            width: 30px;
+            height: 40px;
+            margin: 4px 0 0 60px;
+        }
+        .house_floor_button{
+            margin: 4px 0 0 60px;
+            width: 20px;
+            height: 30px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+
+            .house_floor_button_up{
+                background-image: url(../images/up.svg);
+                background-size: cover;
+                width: 12px;
+                height: 12px;
+                margin-bottom: 4px;
+            }
+            .house_floor_button_down{
+                background-image: url(../images/down.svg);
+                background-size: cover;
+                width: 12px;
+                height: 12px;
+            }
+
+            .house_floor_button_up,
+            .house_floor_button_down{
+                border: 1px solid burlywood;
+                &:hover{
+                    width: 16px;
+                    height: 16px;
+                    transition: all 0.2s;
+                    cursor: pointer;
+                }
+            }
+        }
+        .house_floor_yellow{
+            background-color: yellow;
+            border: 1px solid black;
+            width: 30px;
+            height: 40px;
+            margin: 4px 0 0 150px;
+        }
+        .house_floor_black{
+            background-color: black;
+            border: 1px solid white;
+            width: 30px;
+            height: 40px;
+            margin: 4px 0 0 65px;
+        }
+    }
+}
+.green{
+    cursor: pointer;
+}
